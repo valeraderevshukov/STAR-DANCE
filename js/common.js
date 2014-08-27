@@ -4,5 +4,7 @@ head.ready(function() {
 	// 	$(".js-popup").hide();
 	// });
 
-	console.log($('body').html());
+	$(".js-show-col").click(function(){
+		$(".js-teacher-row").show();
+	});
 });

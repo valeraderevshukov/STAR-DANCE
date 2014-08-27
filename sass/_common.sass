@@ -191,7 +191,7 @@ body
 	margin-top: -60px
 	height: 578px
 	background: url(../img/action-bg.png) no-repeat 0 100%
-	background-size: 100%
+	background-size: cover
 	// .conteiner
 	// 	position: relative !important
 	.bid__bg
@@ -249,6 +249,20 @@ body
 .btn
 	position: relative
 	display: inline-block
+	&.btn_red,
+	&.btn_green
+		height: 30px
+		width: 100%
+		font-size: 16px
+		color: #fff
+		+border-radius(4px)
+		+background-clip(padding-box)
+	&.btn_red
+		background-color: #cd2755
+		+background-image(linear-gradient(bottom, #cc2553 0%, #df4c7f 100%))
+	&.btn_green
+		background-color: #38b348
+		+background-image(linear-gradient(bottom, #2ba338 0%, #50c160 100%))
 	&:hover
 		+opacity(0.95)
 	&:active
@@ -282,8 +296,92 @@ body
 		+background-clip(padding-box)
 		background-color: #cd2755
 		+background-image(linear-gradient(bottom, #cc2553 0%, #df4c7f 100%))
+
+//teacher
+.teacher
+	.teacher__row
+		margin-bottom: 40px
+		+clr
+		&.teacher__row_hide
+			display: none
+	// .teacher__col
+	.teacher__block
+		position: relative
+		margin-top: 15px
+		+clr
+	.teacher__title
+		padding: 0 18px
+		height: 42px
+		line-height: 40px	
+		font-size: 30px
+		font-weight: 300
+		display: inline-block
+		border: 1px solid #ffd6ac
+	.teacher__img
+		float: left
+	.teacher__text
+		position: absolute
+		top: 0
+		left: 220px
+		right: 0
+		bottom: 0
+		overflow: hidden
+		padding-bottom: 70px
+		.btn_red,
+		.btn_green
+			position: absolute
+			left: 0
+			top: auto
+		.btn_red
+			bottom: 39px
+		.btn_green
+			bottom: 0
+	// .title
+	// 	&:before
+	// 		+s(arr5)
+	.teacher__bottom
+		text-align: center
+	.teacher__btn
+		color: #662d91
+		font-size: 30px
+		text-decoration: underline
+		display: inline-block
+		+s(arr6)
 		&:hover
-			color: #fff
+			text-decoration: none
+//toper
+.teacher__top, .partners__top
+	text-align: center
+
+//img
+.img
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		left: 0
+		bottom: 0
+		+arr(20, 20, #fff, bl)
+	&:after
+		position: absolute
+		content: ''
+		right: 0
+		top: 0
+		+arr(20, 20, #fff, tr)
+
+//title
+.title
+	position: relative
+	margin: 20px 0
+	padding: 30px 70px 50px 60px
+	min-width: 810px
+	text-align: center
+	font-size: 51px
+	color: #fff
+	display: inline-block
+	background: url(../img/icons/arr5.png) no-repeat 0 0
+	background-size: 100%
+	+mal
 
 
 

@@ -84,7 +84,7 @@ body
 .menu
 	float: left
 	margin-top: 15px
-	height: 13px
+	height: 14px
 	line-height: 13px
 	overflow: hidden
 	.menu__item
@@ -349,13 +349,14 @@ body
 		+s(arr6)
 		&:hover
 			text-decoration: none
-//toper
-.teacher__top, .partners__top
+//head
+.head
 	text-align: center
 
 //img
 .img
 	position: relative
+	display: inline-block
 	&:before
 		position: absolute
 		content: ''
@@ -383,10 +384,126 @@ body
 	background-size: 100%
 	+mal
 
+//partners
+.partners
+	// .partners__row
+	.partners__title
+		position: relative
+		height: 49px
+		color: #464646
+		line-height: 46px
+		text-align: center
+		font-size: 26px
+		font-weight: 300
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 50%
+			margin-left: -295px
+			width: 589px
+			height: 1px
+			background: #662d91
+		&:after
+			position: absolute
+			content: ''
+			bottom: 0
+			left: 50%
+			margin-left: -295px
+			width: 589px
+			height: 1px
+			background: #662d91
+		span
+			font-weight: 400
+	.partners__col
+		padding: 20px 0 40px
+		+clr
+	.partners__img
+		float: left
+		margin-right: 12px
+		width: 302px
+		height: 238px
+		overflow: hidden
+	.partners__text
+		color: #464646
+		&.partners__text_padtop
+			padding-top: 40px
+	.partners__video 
+		float: left
+		margin-right: 15px
 
+//video
+.video
+	display: inline-block
+	.video__title
+		padding-bottom: 5px
+		color: #662d91
+		font-size: 14px
+		font-weight: 600
+		text-align: center
+		text-transform: uppercase
+		text-decoration: none
+		display: block
+	.video__block
+		img
+			display: block
 
-
-
+//styles
+.styles
+	.styles__slider
+		+clr
+	.cycle__item
+		width: 100%
+	.cycle__left
+		padding-right: 20px
+		overflow: hidden
+		span
+			font-weight: 600
+	.cycle__right
+		position: relative
+		float: right
+		padding-bottom: 15px
+		overflow: hidden
+		.cycle__view
+			position: absolute
+			right: 40px
+			bottom: 15px
+			font-size: 27px
+			font-weight: 600
+			font-style: italic
+			text-transform: uppercase
+			z-index: 2
+			color: #fff
+			&:before
+				position: absolute
+				content: ''
+				top: -1px
+				right: -15px
+				bottom: -4px
+				left: -20px
+				z-index: -1
+				background: url(../img/arr9.png) no-repeat 0 0
+				background-size: cover
+	.center
+		padding: 0 50px 30px
+		text-align: center
+		a
+			margin: 0 15px 15px 0
+			padding: 0 10px
+			height: 28px
+			line-height: 26px
+			color: #e64545
+			font-size: 18px
+			text-transform: uppercase
+			text-decoration: none
+			border: 1px solid #652d91
+			background-color: rgba(220,128,34,.1)
+			display: inline-block
+	.styles__bottom
+		padding: 40px 0 0 0
+		text-align: center
+		.btn
+			width: 252px
 
 
 

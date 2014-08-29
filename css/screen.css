@@ -38,7 +38,7 @@ body { font-family: "Open Sans", sans-serif; font-size: 14px; line-height: 1.4; 
 .topic .topic__left { width: 285px; display: inline-block; }
 .topic .topic__left .topic__title { position: relative; color: white; font-size: 51px; font-family: "Monotype-Corsiva", Arial, sans-serif; }
 .topic .topic__left .topic__title:before { position: absolute; content: ""; top: 50%; left: 50%; margin: -12px 0 0 -12px; background: url('../img/icons-s0297ce8b7e.png') 0 -2882px no-repeat; width: 24px; height: 23px; }
-.topic .topic__left .topic__text { position: relative; z-index: 3; padding: 5px 10px 5px 5px; color: #42324e; font-size: 21px; text-transform: uppercase; background: url(../img/arr8.png) no-repeat 0 0; background-size: contain; }
+.topic .topic__left .topic__text { position: relative; z-index: 3; padding: 5px 18px 5px 5px; color: #42324e; font-size: 20px; text-transform: uppercase; background: url(../img/arr8.png) no-repeat 0 0; background-size: contain; }
 .topic .topic__right { padding-top: 35px; width: 290px; color: white; display: inline-block; }
 .topic .topic__right .topic__phone { margin-bottom: 10px; font-size: 33px; font-weight: bold; }
 .topic .topic__right .topic__btn { font-size: 18px; color: white; background: url('../img/icons-s0297ce8b7e.png') 0 -2915px no-repeat; width: 277px; height: 45px; }
@@ -235,7 +235,7 @@ body { font-family: "Open Sans", sans-serif; font-size: 14px; line-height: 1.4; 
 .questions .questions__btn { color: #d73367; font-size: 33px; text-decoration: underline; background: none; }
 .questions .questions__btn:hover { text-decoration: none; }
 
-.contacts { padding-top: 36px; text-align: center; height: 255px; background: url(../img/contacts-bg.png) no-repeat 50% 50%; background-size: 100%; }
+.contacts { padding-top: 36px; text-align: center; height: 255px; background: url(../img/contacts-bg.png) no-repeat 50% 50%; background-size: cover; }
 .contacts .contacts__logo { position: relative; color: white; text-align: center; font-size: 50px; font-family: "Monotype-Corsiva", Arial, sans-serif; }
 .contacts .contacts__logo:before { position: absolute; content: ""; top: 50%; left: 50%; margin: -8px 0 0 -6px; background: url('../img/icons-s0297ce8b7e.png') 0 -2882px no-repeat; width: 24px; height: 23px; }
 .contacts .contacts__text { color: #3e3e3e; font-size: 28px; }

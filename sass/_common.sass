@@ -66,6 +66,8 @@ body
 .out
 	min-width: 970px
 	overflow: hidden
+	background: url(../img/bg-out.png) no-repeat 0 4555px
+	background-size: 100%
 
 //header
 .header
@@ -190,7 +192,7 @@ body
 	padding: 60px 0 0
 	margin-top: -60px
 	height: 578px
-	background: url(../img/action-bg.png) no-repeat 0 100%
+	background: url(../img/action-bg.png) no-repeat 50% 100%
 	background-size: cover
 	// .conteiner
 	// 	position: relative !important
@@ -250,6 +252,7 @@ body
 	position: relative
 	display: inline-block
 	&.btn_red,
+	&.btn_purple,
 	&.btn_green
 		height: 30px
 		width: 100%
@@ -263,6 +266,9 @@ body
 	&.btn_green
 		background-color: #38b348
 		+background-image(linear-gradient(bottom, #2ba338 0%, #50c160 100%))
+	&.btn_purple
+		background: url(../img/icons/btn-purple.png) no-repeat 0 0
+		background-size: cover
 	&:hover
 		+opacity(0.95)
 	&:active
@@ -384,37 +390,41 @@ body
 	background-size: 100%
 	+mal
 
+//title-line
+.title-line
+	position: relative
+	height: 49px
+	color: #464646
+	line-height: 46px
+	text-align: center
+	font-size: 26px
+	font-weight: 300
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		left: 50%
+		margin-left: -295px
+		width: 589px
+		height: 1px
+		background: #662d91
+	&:after
+		position: absolute
+		content: ''
+		bottom: 0
+		left: 50%
+		margin-left: -295px
+		width: 589px
+		height: 1px
+		background: #662d91
+	span
+		font-weight: 400
+
 //partners
 .partners
 	// .partners__row
-	.partners__title
-		position: relative
-		height: 49px
-		color: #464646
-		line-height: 46px
-		text-align: center
-		font-size: 26px
-		font-weight: 300
-		&:before
-			position: absolute
-			content: ''
-			top: 0
-			left: 50%
-			margin-left: -295px
-			width: 589px
-			height: 1px
-			background: #662d91
-		&:after
-			position: absolute
-			content: ''
-			bottom: 0
-			left: 50%
-			margin-left: -295px
-			width: 589px
-			height: 1px
-			background: #662d91
-		span
-			font-weight: 400
+	// .partners__title
+
 	.partners__col
 		padding: 20px 0 40px
 		+clr
@@ -454,6 +464,8 @@ body
 		+clr
 	.cycle__item
 		width: 100%
+		height: 100%
+		+clr
 	.cycle__left
 		padding-right: 20px
 		overflow: hidden
@@ -504,35 +516,520 @@ body
 		text-align: center
 		.btn
 			width: 252px
+//pupil
+.pupil
+	.pupil__head
+		.title
+			padding-top: 45px
+	.pupil__slider
+		margin-top: 50px
+
+.portfolio
+	position: relative
+	z-index: 60
+
+	.portfolio:after 
+		content: ""
+		display: block
+		width: 100%
+		position: absolute
+		left: 0px
+		bottom: 0px
+		height: 2px
+
+	.superCar 
+		list-style: none outside none
+		padding: 0px
+		margin: 0px auto
+		height: 341px
+		width: 590px
+
+	.superCar 
+		li 
+			width: 390px
+			height: 341px
+			cursor: pointer
+
+	.superCar 
+		li 
+			img 
+				display: block
+				width: 100%
+				left: 0px
+				top: 0px
+				position: relative
+				+box-shadow(5px 5px 5px 0px rgba(50, 50, 50, 0.2))
+
+	.superCar li.roundabout-in-focus 
+		cursor: default
+
+	.superCar li span 
+		display: block
+
+	.arrNext 
+		display: block
+		position: absolute
+		margin: auto
+		right: -205px
+		cursor: pointer
+		text-indent: 0px
+		top: -40px
+		bottom: 0px
+		height: 74px
+		width: 36px
+		z-index: 1000
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			right: -4px
+			margin-top: -45px
+			+s(arrPrev)
+
+	.arrPrev 
+		display: block
+		position: absolute
+		margin: auto
+		left: -215px
+		cursor: pointer
+		text-indent: 0px
+		top: -40px
+		bottom: 0px
+		height: 74px
+		width: 36px
+		z-index: 1000
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 0
+			margin-top: -45px
+			+s(arrNext)
 
 
+//fancybox
+.fancybox-inner
+	width: auto !important
+	height: auto !important
+	img
+		width: 100%
+// .fancybox-wrap
+// 	width: 835px !important
+
+//honors
+.honors
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		top: 46px
+		left: -82px
+		z-index: -1	
+		+s(arr11)
+	.honors__title
+		position: relative
+		font-size: 40px
+		font-weight: 400
+		color: #fff
+		z-index: 2
+		display: inline-block
+		+mal
+		&:before
+			position: absolute
+			content: ''
+			top: -20px
+			left: -70px
+			z-index: -1
+			+s(arr10)
+	.honors__top
+		padding: 45px 0 70px
+		font-style: 0
+		text-align: center
+	.honors__img
+		margin-right: 7px
+		width: 313px
+		height: 173px
+		display: inline-block 
+		img
+			width: 100%
+			display: block
+	.honors__slider
+		position: relative
+		z-index: 1
+		&:before
+			position: absolute
+			content: ''
+			top: -28px
+			left: -51px
+			z-index: -1
+			+s(honors-slider-bg)
+		.slick-slide
+			img
+				margin-left: 2%
+				width: 98%
+
+//slider
+.slideshow
+	position: relative
+	.slick-slide
+		img
+			margin-left: 1%
+			width: 99%
+	.slick-prev, .slick-next
+		position: absolute
+		top: 0
+		height: 100%
+		width: 56px
+		margin: 0
+		z-index: 100
+		overflow: hidden 
+		background-size: cover
+		&:before
+			display: none
+		&:after
+			position: absolute
+			content: ''
+			bottom: -214px
+			left: 0	
+			width: 100%
+			height: 100%	
+			background: rgba(#f3f3f3, 0.7)
+		&:hover
+			+opacity(0.95)
+	.slick-prev
+		left: 0
+		background: url(../img/slick-prev.png) no-repeat 0 0
+	.slick-next
+		right: 0
+		background: url(../img/slick-next.png) no-repeat 0 0
+
+//action
+.action
+	height: 583px
+	background: url(../img/action2-bg.png) no-repeat 50% 50%
+	background-size: cover
+	+clr
+	.action__left
+		display: inline-block 
+
+	.action__top
+		position: relative
+		padding: 20px 0 30px
+		text-align: center
+		text-transform: uppercase
+		z-index: 2
+		&:before
+			position: absolute
+			content: ''
+			top: 8px
+			left: 50%
+			margin-left: -212px
+			z-index: -1
+			+s(arr12)
+	.action__title
+		color: #662d91
+		font-size: 26px
+		font-weight: 700
+	.action__discount
+		color: #fff
+		font-size: 33px
+		span
+			font-size: 23px
+	// .action__form
+	.action__right
+		padding-left: 15px
+		vertical-align: top
+		text-align: center
+		display: inline-block
+	.action__subscription
+		position: relative
+		padding: 20px 0 0 0
+		color: #fff
+		font-weight: 700
+		font-size: 50px
+		z-index: 1
+		&:before
+			position: absolute
+			content: ''
+			top: 18px
+			left: -54px
+			z-index: -1
+			+s(arr14)
+		span
+			font-size: 20px
+			display: block
+	.action__oldprice
+		position: relative
+		margin-top: 30px
+		color: #fff
+		font-weight: 700
+		font-size: 40px
+		span
+			+opacity(0.5)
+		&:before
+			position: absolute
+			content: ''
+			top: 25px
+			width: 100%
+			height: 5px
+			z-index: 1
+			background: #fb1f1f
+			+border-radius(5px)
+			+rotate(-7)
+	.action__price
+		position: relative
+		margin: 75px 0 0 15px
+		color: #662d91
+		font-size: 97px
+		line-height: 0.7
+		font-weight: 700
+		z-index: 1
+		+text-shadow(0 1px 0 rgba(#fff, 0.6))
+		&:before
+			position: absolute
+			content: ''
+			top: -78px
+			left: -43px
+			z-index: -1
+			+s(arr15)
+		span
+			font-size: 66px
+			font-weight: 300
+	.form__row
+		margin-bottom: 10px
+		input
+			height: 62px
+	.action__dashboard
+		margin-bottom: 15px
+		padding: 8px 0 6px
+		text-align: center
+		overflow: hidden
+		background: url(../img/bg-dashboard.png) no-repeat 0 0
+		background-size: cover
+		+border-radius(5px)
+
+//dash
+.dash
+	margin-left: 10px
+	font-size: 0
+	display: inline-block
+	&:first-child
+		margin-left: 0
+	.digit
+		width: 40px
+		height: 70px
+		color: #4c4c4c
+		text-align: center
+		font-size: 52px
+		vertical-align: top
+		display: inline-block
+		+s(arr13)
+	.dash_title
+		padding-top: 2px
+		font-size: 10px
+
+//subscriptions
+.subscriptions
+	.subscriptions__wrap
+		text-align: center
+		font-size: 0
+	.subscriptions__item
+		width: 20%
+		border: 1px solid #fff
+		background: #f4f4f4
+		display: inline-block
+	.subscriptions__top
+		height: 82px
+	.subscriptions__title
+		margin-bottom: 5px
+		color: #662d91
+		font-size: 30px
+		font-weight: 600
+		&.subscriptions__title_mod
+			font-size: 17px
+			text-transform: uppercase
+		&.subscriptions__title_ttu
+			text-transform: uppercase
+	.subscriptions__type
+		margin-bottom: 10px
+		color: #333333
+		font-size: 18px
+		font-weight: 300
+		text-transform: uppercase
+	.subscriptions__img
+		border-top: 1px solid #fff
+		border-bottom: 1px solid #fff
+		img
+			width: 100%
+			display: block
+	.subscriptions__price
+		padding: 10px 0
+		color: #f69430
+		font-size: 45px
+		line-height: 1.1
+		font-weight: 600
+		span
+			font-weight: 300
+			font-size: 28px
+			text-transform: uppercase
+			display: block
+	.subscriptions__btn
+		padding: 0 15px 15px
+
+//lifestudio
+.lifestudio
+	.lifestudio__row
+		padding-bottom: 20px
+	.lifestudio__video
+		margin-bottom: 20px
+		.video__title
+			font-size: 12px
+
+//reviews
+.reviews
+	.reviews__item
+		margin-bottom: 42px
+	.reviews__img 
+		float: left
+	.reviews__text
+		position: relative
+		padding-bottom: 30px
+		height: 175px
+		padding-left: 15px
+		font-size: 13px 
+		overflow: hidden
+		p
+			padding-right: 30px
+		a
+			font-size: 14px
+			color: #662d91
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	.reviews__title
+		margin: 0
+		padding-bottom: 5px
+		color: #363636
+		font-size: 14px
+		font-weight: 700
+	.reviews__btn
+		position: absolute
+		bottom: 0
+		left: 15px
+		font-size: 14px
+		color: #662d91
+		text-decoration: underline
+		background: none
+		&:hover
+			text-decoration: none
 
 
+//map
+.map
+	margin-top: 40px
+	height: 740px
+	background: url(../img/map-bg.png) no-repeat 50% 50%
+	background-size: cover
+	.map__head
+		margin-top: -40px
+	.map__title
+		margin-top: 200px
+		width: 425px
+		color: #fff
+		font-size: 26px
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase
+	.map__form
+		margin: 47px 0 0 35px
+		width: 376px
+		.form__row
+			margin-bottom: 15px
+			input
+				height: 63px
+	.map__addres
+		margin-top: 20px
+		border: 5px solid #fff
+		display: inline-block
+		img 
+			display: block
+//questions
+.questions
+	height: 110px
+	line-height: 110px
+	text-align: center
+	.questions__title, .questions__btn
+		vertical-align: middle
+		display: inline-block
+	.questions__title
+		margin-right: 30px
+		color: #662d91
+		font-size: 45px
+		+mal
+	.questions__btn	
+		color: #d73367
+		font-size: 33px
+		text-decoration: underline
+		background: none
+		&:hover
+			text-decoration: none
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//contacts
+.contacts
+	padding-top: 36px
+	text-align: center
+	height: 255px
+	background: url(../img/contacts-bg.png) no-repeat 50% 50%
+	background-size: 100%
+	.contacts__logo
+		position: relative
+		color: #fff
+		text-align: center
+		font-size: 50px
+		+mc
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			margin: -8px 0 0 -6px
+			+s(star)
+	.contacts__text
+		color: #3e3e3e
+		font-size: 28px
+	.contacts__callback, .contacts__logo, .contacts__text
+		margin: 0 25px
+		vertical-align: top
+		display: inline-block
+	.contacts__phone
+		padding-bottom: 10px
+		color: #fff
+		font-size: 33px
+		font-weight: 700
+	.contacts__addres
+		padding-top: 4px
+		font-size: 16px
+		color: #fff
+//footer
+.footer
+	height: 98px
+	line-height: 98px
+	color: #808080
+	font-size: 14px
+	text-align: right
+	.footer__text, .footer__development, .footer__ico
+		vertical-align: middle
+		display: inline-block
+	.footer__development
+		height: 40px
+		line-height: 40px
+		margin-left: 108px
+		span
+			vertical-align: top
+			display: inline-block
+	.footer__ico
+		vertical-align: top
+		+s(logo)
 
 
 

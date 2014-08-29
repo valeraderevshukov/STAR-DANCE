@@ -7,6 +7,8 @@
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<link rel="stylesheet" media="screen" href="css/bootstrap.css" >
+	<link rel="stylesheet" media="screen" type="text/css" href="css/jquery.fancybox.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/slick.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,300,700,800' rel='stylesheet' type='text/css'>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
@@ -151,7 +153,7 @@
 					<h3 class="title">Наши звездные партнеры</h3>
 				</div>
 				<div class="partners__row">
-					<div class="partners__title"><span>«Иванушки International»</span> — российская музыкальная группа</div>
+					<div class="partners__title title-line"><span>«Иванушки International»</span> — российская музыкальная группа</div>
 				</div>
 				<div class="partners__col">
 					<div class="partners__img img"> 
@@ -165,7 +167,7 @@
 					</div>
 				</div>
 				<div class="partners__row">
-					<div class="partners__title"><span>Дарья Сагалова</span> - российская актриса театра и кино, хореограф.</div>	
+					<div class="partners__title title-line"><span>Дарья Сагалова</span> - российская актриса театра и кино, хореограф.</div>
 				</div>
 				<div class="partners__col">
 					<div class="partners__img img">
@@ -182,6 +184,67 @@
 						<p>Совместная работа с малышами 3-4 лет принесла отличные результаты. Уже на втором конкурсе, детки заняли 1 место. </p>
 						<p>Проведено несколько десятков концертов и поставлено несколько совместных номеров.</p>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="action">
+		<div class="container">
+			<div class="row">
+				<div class="action__left">
+					<div class="action__top">
+						<div class="action__title">
+							УСПЕЙ ОСТАВИТЬ<br>
+							ЗАЯВКУ<br>
+							И ПОЛУЧИТЬ 
+						</div>
+						<div class="action__discount"><span>СКИДКУ</span> 1000 РУБЛЕЙ</div>
+					</div>
+					<div class="action__dashboard" id="countdown_dashboard">
+						<div class="dash days_dash">
+							<div class="digit dg1">0</div>
+							<div class="digit dg2">0</div>
+							<div  class="dash_title">дней</div></div>
+
+						<div class="dash hours_dash">
+							<div class="digit dg1">0</div>
+							<div class="digit dg2">0</div>
+							<div  class="dash_title">часов</div>
+						</div>
+
+						<div class="dash minutes_dash">
+							<div class="digit dg1">0</div>
+							<div class="digit dg2">0</div>
+							<div  class="dash_title">минут</div>
+						</div>
+
+						<div class="dash seconds_dash">
+							<div class="digit dg1">0</div>
+							<div class="digit dg2">0</div>
+							<div  class="dash_title">секунд</div>
+						</div>
+
+	                </div>
+					<div class="action__form form">
+						<div class="form__row">
+							<input type="text" placeholder="Введите имя">
+						</div>
+						<div class="form__row">
+							<input type="text" placeholder="Введите телефон">
+						</div>
+						<div class="form__row">
+							<button class="form__btn btn" type="button">ОСТАВИТЬ ЗАЯВКУ</button>
+						</div>
+					</div>
+				</div>
+				<div class="action__right">
+					<div class="action__subscription">
+						АКЦИЯ
+						<span>АБОНЕМЕНТ <br>
+						НА 16 ЗАНЯТИЙ</span>
+					</div>
+					<div class="action__oldprice"><span>3500 рублей</span></div>
+					<div class="action__price">2500 <br><span>рублей</span></div>
 				</div>
 			</div>
 		</div>
@@ -339,9 +402,462 @@
 					<button class="btn btn_red">Записаться</button>
 				</div>
 			</div>
+			<div class="pupil">
+				<div class="pupil__head head">
+					<h3 class="title">Наши победоносные ученики</h3>
+					<div class="pupil__slider">
+					    <div class="portfolio">
+					        <div class="jaw">
+					            <ul style="padding: 0px; position: relative;" class="superCar roundabout-holder">
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item roundabout-in-focus">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					                <li style="position: absolute; left: 82px; top: -2px; width: 600px; height: 420px; opacity: 1; z-index: 280; font-size: 18px;" class="roundabout-moveable-item">
+					                    <span><img src="img/img3.png" alt=""></span>
+					                </li>
+					            <a class="arrNext"></a>
+					            <a class="arrPrev"></a>
+					            </ul>
+					        </div>
+					    </div><!--.portfolio-->
+					</div>
+				</div>
+			</div>
+			<div class="honors">
+				<div class="honors__head head">
+					<div class="honors__title">НАГРАДЫ</div>
+				</div>
+				<div class="honors__top">
+					<a href="./img/IMAG1064.jpg" class="honors__img fancybox" rel="group1"><img src="img/IMAG2114.jpg" alt="img"></a>
+					<a href="./img/IMAG2113.jpg" class="honors__img fancybox" rel="group1"><img src="img/IMAG1064.jpg" alt="img"></a>
+					<a href="./img/IMAG2114.jpg" class="honors__img fancybox" rel="group1"><img src="img/IMAG2113.jpg" alt="img"></a>
+				</div>
+				<div class="honors__slider slider slideshow">
+					<div><a href="img/diploma8.png" class="fancybox" rel="group2"><img src="img/diploma1.png" alt="img"></a></div>
+					<div><a href="img/diploma2.png" class="fancybox" rel="group2"><img src="img/diploma2.png" alt="img"></a></div>
+					<div><a href="img/diploma3.png" class="fancybox" rel="group2"><img src="img/diploma3.png" alt="img"></a></div>
+					<div><a href="img/diploma4.png" class="fancybox" rel="group2"><img src="img/diploma4.png" alt="img"></a></div>
+					<div><a href="img/diploma5.png" class="fancybox" rel="group2"><img src="img/diploma5.png" alt="img"></a></div>
+					<div><a href="img/diploma6.png" class="fancybox" rel="group2"><img src="img/diploma6.png" alt="img"></a></div>
+					<div><a href="img/diploma7.png" class="fancybox" rel="group2"><img src="img/diploma7.png" alt="img"></a></div>
+					<div><a href="img/diploma1.png" class="fancybox" rel="group2"><img src="img/diploma8.png" alt="img"></a></div>
+					<div><a href="img/diploma8.png" class="fancybox" rel="group2"><img src="img/diploma1.png" alt="img"></a></div>
+					<div><a href="img/diploma2.png" class="fancybox" rel="group2"><img src="img/diploma2.png" alt="img"></a></div>
+					<div><a href="img/diploma3.png" class="fancybox" rel="group2"><img src="img/diploma3.png" alt="img"></a></div>
+				</div>
+			</div>
+			<div class="subscriptions">
+				<div class="subscriptions__head head">
+					<div class="title">Наши абонементы</div>
+				</div>
+				<div class="subscriptions__wrap">
+					<div class="subscriptions__item">
+						<div class="subscriptions__top">
+							<h3 class="subscriptions__title">8 занятий</h3>
+							<div class="subscriptions__type">взрослый</div>
+						</div>
+						<div class="subscriptions__img">
+							<img src="img/img4.png" alt="img">
+						</div>
+						<div class="subscriptions__price">
+							1800
+							<span>рублей</span>
+						</div>
+						<div class="subscriptions__btn">
+							<button class="btn btn_red" type="bottom">Записаться</button>
+						</div>
+					</div>
+					<div class="subscriptions__item">
+						<div class="subscriptions__top">
+							<h3 class="subscriptions__title">8 занятий</h3>
+							<div class="subscriptions__type">взрослый</div>
+						</div>
+						<div class="subscriptions__img">
+							<img src="img/img4.png" alt="img">
+						</div>
+						<div class="subscriptions__price">
+							1800
+							<span>рублей</span>
+						</div>
+						<div class="subscriptions__btn">
+							<button class="btn btn_red" type="bottom">Записаться</button>
+						</div>
+					</div>
+					<div class="subscriptions__item">
+						<div class="subscriptions__top">
+							<h3 class="subscriptions__title">8 занятий</h3>
+							<div class="subscriptions__type">взрослый</div>
+						</div>
+						<div class="subscriptions__img">
+							<img src="img/img4.png" alt="img">
+						</div>
+						<div class="subscriptions__price">
+							1800
+							<span>рублей</span>
+						</div>
+						<div class="subscriptions__btn">
+							<button class="btn btn_red" type="bottom">Записаться</button>
+						</div>
+					</div>
+					<div class="subscriptions__item">
+						<div class="subscriptions__top">
+							<h3 class="subscriptions__title">8 занятий</h3>
+							<div class="subscriptions__type">взрослый</div>
+						</div>
+						<div class="subscriptions__img">
+							<img src="img/img4.png" alt="img">
+						</div>
+						<div class="subscriptions__price">
+							1800
+							<span>рублей</span>
+						</div>
+						<div class="subscriptions__btn">
+							<button class="btn btn_red" type="bottom">Записаться</button>
+						</div>
+					</div>
+					<div class="subscriptions__item">
+						<div class="subscriptions__top">
+							<h3 class="subscriptions__title">8 занятий</h3>
+							<div class="subscriptions__type">взрослый</div>
+						</div>
+						<div class="subscriptions__img">
+							<img src="img/img4.png" alt="img">
+						</div>
+						<div class="subscriptions__price">
+							1800
+							<span>рублей</span>
+						</div>
+						<div class="subscriptions__btn">
+							<button class="btn btn_red" type="bottom">Записаться</button>
+						</div>
+					</div>
+					<div class="subscriptions__item">
+						<div class="subscriptions__top">
+							<h3 class="subscriptions__title subscriptions__title_mod">Постановка <br>Свадебного танца <br>за 4 часа</h3>
+						</div>
+						<div class="subscriptions__img">
+							<img src="img/img4.png" alt="img">
+						</div>
+						<div class="subscriptions__price">
+							1800
+							<span>рублей</span>
+						</div>
+						<div class="subscriptions__btn">
+							<button class="btn btn_red" type="bottom">Записаться</button>
+						</div>
+					</div>
+					<div class="subscriptions__item">
+						<div class="subscriptions__top">
+							<h3 class="subscriptions__title subscriptions__title_ttu">АРЕНДА зала</h3>
+						</div>
+						<div class="subscriptions__img">
+							<img src="img/img4.png" alt="img">
+						</div>
+						<div class="subscriptions__price">
+							1800
+							<span>рублей</span>
+						</div>
+						<div class="subscriptions__btn">
+							<button class="btn btn_red" type="bottom">Записаться</button>
+						</div>
+					</div>
+					<div class="subscriptions__item">
+						<div class="subscriptions__top">
+							<h3 class="subscriptions__title subscriptions__title_mod">Индивидуальное занятие</h3>
+						</div>
+						<div class="subscriptions__img">
+							<img src="img/img4.png" alt="img">
+						</div>
+						<div class="subscriptions__price">
+							1800
+							<span>рублей</span>
+						</div>
+						<div class="subscriptions__btn">
+							<button class="btn btn_red" type="bottom">Записаться</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="lifestudio">
+				<div class="lifestudio__head head">
+					<div class="title">Жизнь студии</div>
+				</div>
+				<div class="lifestudio__slider slider2 slideshow">
+					<div><a href="img/img7.png" class="fancybox" rel="group2"><img src="img/img5.png" alt="img"></a></div>
+					<div><a href="img/img6.png" class="fancybox" rel="group2"><img src="img/img6.png" alt="img"></a></div>
+					<div><a href="img/img5.png" class="fancybox" rel="group2"><img src="img/img7.png" alt="img"></a></div>
+					<div><a href="img/img7.png" class="fancybox" rel="group2"><img src="img/img5.png" alt="img"></a></div>
+				</div>
+				<div class="lifestudio__row">
+					<div class="lifestudio__title title-line"><span>«Иванушки International»</span> — российская музыкальная группа</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="lifestudio__video video">
+							<a href="#" class="video__title">КОНКУРС ДЕТСКИХ ТАНЦЕВ БУГИ-ВУГИ</a>
+							<a href="#" class="video__block">
+								<img src="img/img-video.png" alt="img">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="lifestudio__video video">
+							<a href="#" class="video__title">КОНКУРС ДЕТСКИХ ТАНЦЕВ БУГИ-ВУГИ</a>
+							<a href="#" class="video__block">
+								<img src="img/img-video.png" alt="img">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="lifestudio__video video">
+							<a href="#" class="video__title">КОНКУРС ДЕТСКИХ ТАНЦЕВ БУГИ-ВУГИ</a>
+							<a href="#" class="video__block">
+								<img src="img/img-video.png" alt="img">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="lifestudio__video video">
+							<a href="#" class="video__title">КОНКУРС ДЕТСКИХ ТАНЦЕВ БУГИ-ВУГИ</a>
+							<a href="#" class="video__block">
+								<img src="img/img-video.png" alt="img">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="reviews">
+				<div class="reviews__head head">
+					<div class="title">Отзывы наших учеников</div>
+				</div>
+				<div class="row">
+					<div class="reviews__item col-md-6">
+						<div class="reviews__img img"> 
+							<img src="img/img8.png" alt="img">
+						</div>
+						<div class="reviews__text">
+							<h3 class="reviews__title">СВЕТЛАНА ФИЛИПЧЕНКО</h3>
+							<p>Когда я первый раз попала на занятие к Аделии, то я поняла, что нашла то, что давно искала. Аделя стала просто находкой для меня! Я отзанималась у нее 2 года до тех пор, пока она не уехала из Москвы. После этого я пыталась найти похожего хореографа, но все они ... </p>
+							<button class="reviews__btn">Читать отзыв полностью</button>
+						</div>
+					</div>
+					<div class="reviews__item col-md-6">
+						<div class="reviews__img img"> 
+							<img src="img/img8.png" alt="img">
+						</div>
+						<div class="reviews__text">
+							<h3 class="reviews__title">СВЕТЛАНА ФИЛИПЧЕНКО</h3>
+							<p>Занимаюсь в студии Star Dance)хороший хореограф Аделия,буду дальше продолжать заниматься в этой студии.</p>
+							<a href="#">http://vk.com/ddr99</a>
+						</div>
+					</div>
+					<div class="reviews__item col-md-6">
+						<div class="reviews__img img"> 
+							<img src="img/img8.png" alt="img">
+						</div>
+						<div class="reviews__text">
+							<h3 class="reviews__title">СВЕТЛАНА ФИЛИПЧЕНКО</h3>
+							<p>Когда я первый раз попала на занятие к Аделии, то я поняла, что нашла то, что давно искала. Аделя стала просто находкой для меня! Я отзанималась у нее 2 года до тех пор, пока она не уехала из Москвы. После этого я пыталась найти похожего хореографа, но все они ... </p>
+							<button class="reviews__btn">Читать отзыв полностью</button>
+						</div>
+					</div>
+					<div class="reviews__item col-md-6">
+						<div class="reviews__img img"> 
+							<img src="img/img8.png" alt="img">
+						</div>
+						<div class="reviews__text">
+							<h3 class="reviews__title">СВЕТЛАНА ФИЛИПЧЕНКО</h3>
+							<p>Когда я первый раз попала на занятие к Аделии, то я поняла, что нашла то, что давно искала. Аделя стала просто находкой для меня! Я отзанималась у нее 2 года до тех пор, пока она не уехала из Москвы. После этого я пыталась найти похожего хореографа, но все они ... </p>
+							<button class="reviews__btn">Читать отзыв полностью</button>
+						</div>
+					</div>
+					<div class="reviews__item col-md-6">
+						<div class="reviews__img img"> 
+							<img src="img/img8.png" alt="img">
+						</div>
+						<div class="reviews__text">
+							<h3 class="reviews__title">СВЕТЛАНА ФИЛИПЧЕНКО</h3>
+							<p>Когда я первый раз попала на занятие к Аделии, то я поняла, что нашла то, что давно искала. Аделя стала просто находкой для меня! Я отзанималась у нее 2 года до тех пор, пока она не уехала из Москвы. После этого я пыталась найти похожего хореографа, но все они ... </p>
+							<button class="reviews__btn">Читать отзыв полностью</button>
+						</div>
+					</div>
+					<div class="reviews__item col-md-6">
+						<div class="reviews__img img"> 
+							<img src="img/img8.png" alt="img">
+						</div>
+						<div class="reviews__text">
+							<h3 class="reviews__title">СВЕТЛАНА ФИЛИПЧЕНКО</h3>
+							<p>Занимаюсь в студии Star Dance)хороший хореограф Аделия,буду дальше продолжать заниматься в этой студии.</p>
+							<a href="#">http://vk.com/ddr99</a>
+						</div>
+					</div>
+					<div class="reviews__item col-md-6">
+						<div class="reviews__img img"> 
+							<img src="img/img8.png" alt="img">
+						</div>
+						<div class="reviews__text">
+							<h3 class="reviews__title">СВЕТЛАНА ФИЛИПЧЕНКО</h3>
+							<p>Когда я первый раз попала на занятие к Аделии, то я поняла, что нашла то, что давно искала. Аделя стала просто находкой для меня! Я отзанималась у нее 2 года до тех пор, пока она не уехала из Москвы. После этого я пыталась найти похожего хореографа, но все они ... </p>
+							<button class="reviews__btn">Читать отзыв полностью</button>
+						</div>
+					</div>
+					<div class="reviews__item col-md-6">
+						<div class="reviews__img img"> 
+							<img src="img/img8.png" alt="img">
+						</div>
+						<div class="reviews__text">
+							<h3 class="reviews__title">СВЕТЛАНА ФИЛИПЧЕНКО</h3>
+							<p>Когда я первый раз попала на занятие к Аделии, то я поняла, что нашла то, что давно искала. Аделя стала просто находкой для меня! Я отзанималась у нее 2 года до тех пор, пока она не уехала из Москвы. После этого я пыталась найти похожего хореографа, но все они ... </p>
+							<button class="reviews__btn">Читать отзыв полностью</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+	<div class="map">
+		<div class="container">
+			<div class="map__head head">
+				<h3 class="title">Как нас найти?</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="map__title">ЗАПИШИСЬ <br>на бесплатное занятие</div>
+					<div class="map__form form">
+						<div class="form__row">
+							<input type="text" placeholder="Введите имя">
+						</div>
+						<div class="form__row">
+							<input type="text" placeholder="Введите телефон">
+						</div>
+						<div class="form__row">
+							<button class="form__btn btn" type="button">ОСТАВИТЬ ЗАЯВКУ</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="map__addres">
+						<img src="img/map1.png" alt="img">
+					</div>
+					<div class="map__addres">
+						<img src="img/map2.png" alt="img">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="questions">
+			<div class="questions__title">Остались вопросы?</div>
+			<div class="questions__btn">Задайте их менеджеру</div>
+		</div>
+	</div>
+	<div class="contacts">
+		<div class="container">
+			<div class="contacts__logo">
+				STAR<br>DANCE
+			</div>
+			<div class="contacts__text">
+				СТУДИЯ ТАНЦА <br>ДЛЯ ВЗРОСЛЫХ И ДЕТЕЙ <br>В ЦЕНТРЕ ТЮМЕНИ 
+			</div>
+			<div class="contacts__callback">
+				<div class="contacts__phone">+7(3452)38-10-73</div>
+				<button class="btn btn_purple">ЗАКАЗАТЬ ЗВОНОК</button>
+				<div class="contacts__addres">ул. Станислава Карнацевича 14 к.2<br>ул. Минская, 65</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__text">Политика конфиденциальности</div>
+			<div class="footer__development">
+				<span>Разработка сайта:</span>
+				<a href="#" class="footer__ico"></a>
+			</div>
+		</div>
+	</footer>
 </div>
+
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
